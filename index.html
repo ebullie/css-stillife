@@ -1,0 +1,109 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .cafetera {
+    position: absolute;
+    background-color: rgb(255, 81, 0);
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    top: 100px;
+    left: 250px;
+  }
+  
+  .cafe-middle {
+    width: 90%;
+    height: 55%;
+    background-color: orange;
+    position: absolute;
+    top: 25%
+  }
+  
+   .bustelo-left {
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    height: 90px;
+  } 
+  .bustelo-right {
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    height: 90px;
+  } 
+  .cup {
+    position: absolute;
+    border: 1px solid black;
+    width: 95px;
+    height: 100px;
+     top: 120px;
+    left: 165px;
+    z-index: +1;
+  }
+  
+    .stripes {
+    background-image: linear-gradient(#303382 50%, #ffffff 49%);
+    background-size: 100% 40%;
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    position: absolute;
+    z-index: -1;
+    /*z-index changes the order of things*/
+  }
+  
+  .triangle {
+    width: 80%;
+    height: 90%;
+    background-color: red;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    transform: rotate(0deg) translate(0, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .star {
+    background-color: white;
+    position: absolute;
+    width: 40%;
+    height: 35%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: translate(-55%, 0px)
+  }
+  
+
+
+</style>
+
+
+<div class="frame">
+  <div class="cafetera"></div>
+    <div class="caf-middle"></div>
+  <div class="bustelo can-left"></div>
+  <div class="bustelo can-right"></div>
+  <div class="cup">
+    <div class="stripes"></div>
+    <div class="triangle">
+       <div class="star">
+    </div>
+  </div>
+	<!-- ur HTML code goes here --> 
+</div>
+</div>
