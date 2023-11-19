@@ -21,43 +21,62 @@
     position: absolute;
     background-color: rgb(255, 81, 0);
     width: 200px;
-    height: 300px;
+    height: 250px;
     border: 1px solid black;
-    top: 100px;
-    left: 250px;
+    top: 70px;
+    left: 270px;
   }
   
-  .caf-middle {
+/*.caf-middle {
     width: 200px;
     height: 100px;
-    background-color: orange;
     position: absolute;
     top: 14%;
     left: 6%;
     transform: perspective(300px), rotateX(30deg);
+  }*/
+  
+   .can-right {
+    position: absolute;
+    top: 125px;
+    right: 150px;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    border-radius: 100% / 60px;
+  		  background: radial-gradient(50% 30px at 50% 30px, #0003 99.99%, #0000 0),
+    yellow;
+  } 
+  
+  .can-left {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border: 1px solid black;
+    width: 150px;
+    height: 250px;
+    border-radius: 100% / 60px;
+  		  background: radial-gradient(50% 30px at 50% 30px, #0003 99.99%, #0000 0),
+    yellow;
+    z-index: -1
+  } 
+  
+  .shadow {
+    position: absolute;
+    border: 1px, black;
+    width: 150px;
+    height: 250px;
+    background-image: linear-linear-gradient(to right, #ffff00 0%, #caca1c 100%);
+    z-index: 4;
   }
-  
-   .can-left {
-    position: absolute;
-    border: 1px solid black;
-    width: 300px;
-    height: 90px;
-  } 
-  
-  .can-right {
-    position: absolute;
-    border: 1px solid black;
-    width: 300px;
-    height: 90px;
-  } 
   
   .cup {
     position: absolute;
     border: 1px solid black;
     width: 95px;
     height: 100px;
-     top: 120px;
-    left: 165px;
+    top: 70px;
+    left: 215px;
     z-index: +1;
   }
   
@@ -100,8 +119,11 @@
 <div class="frame">
   <div class="cafetera"></div>
     <div class="caf-middle"></div>
-  <div class="bustelo can-left"></div>
   <div class="bustelo can-right"></div>
+  <div class="bustelo can-left">
+    <div class="bustelo shadow"></div>
+  </div>
+  
   <div class="cup">
     <div class="stripes"></div>
     <div class="triangle">
