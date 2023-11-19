@@ -57,6 +57,17 @@
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     background-image: radial-gradient(400px 800px at 49% 49%, #d6d6d6 0%, #6e6e6e 16%, #4f4f4f 28%);
   }
+  
+  .caf-nub {
+    position: absolute;
+    border: 2px, black;
+    top: 80px;
+    left: 360px;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(0, 0%, 27%);
+    clip-path: polygon(0 0, 100% 0, 84% 100%, 16% 100%);
+  }
   /*I used this website to figure out how to make cylindrical shapes https://alvaromontoro.medium.com/how-to-draw-a-cylinder-in-css-in-three-easy-steps-b71b7f8ba99e*/
    .can-right {
     position: absolute;
@@ -143,7 +154,7 @@
     height: 100px;
     top: 70px;
     left: 215px;
-    z-index: 3;
+    z-index: 7;
   }
   
   .cup-base {
@@ -160,13 +171,12 @@
   
   .cup-handle {
     position: absolute;
-    top: 70px;
-    left: 195px;
-    border: 50px solid rgb(255, 255, 255);
+    top: 73px;
+    left: 169px;
+    border: 7px solid rgb(255, 255, 255);
     border-radius: 50%;
     height: 100px;
-    width: 20px;
-    background-color: black;
+    width: 95px;
     z-index: 4
     
   }
@@ -210,6 +220,7 @@
   <div class="cafetera"></div>
   <div class="caf-cap"></div>
   <div class="caf-base"></div>
+  <div class="caf-nub"></div>
   <div class="bustelo can-right"></div>
   <div class="bustelo can-left"></div>
   <div class="llshadow"></div>
